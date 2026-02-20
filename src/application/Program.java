@@ -19,6 +19,34 @@ public class Program {
 
 		tasks.addTask(task);
 		tasks.showTasks();
-	}
+		
+		
+
+        if (args.length == 0) {
+            System.out.println("Nenhum comando informado.");
+            return;
+        }
+
+        String command = args[0];
+
+        switch (command) {
+
+            case "add":
+                System.out.println("Adicionando tarefa...");
+                break;
+
+            case "list":
+                System.out.println("Listando tarefas...");
+                break;
+
+            case "delete":
+                System.out.println("Removendo tarefa...");
+                break;
+
+            default:
+                System.out.println("Comando inválido.");
+        }
+    }
+		
 
 }
