@@ -46,6 +46,11 @@ public class Task {
 		this.updatedAt = updatedAt;
 	}
 	
+	
+	
+	public int getId() {
+		return id;
+	}
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
